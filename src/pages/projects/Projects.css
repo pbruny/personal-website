@@ -64,13 +64,22 @@
   margin-top: 60px;
 }
 
-@media (max-width: 1380px) {
+@media (max-width: 1600px) {
   .projects-heading-text {
     font-size: 50px;
     margin-top: 80px;
   }
   .projects-heading-sub-text {
     font-size: 25px;
+  }
+
+  .repo-cards-div-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 1rem;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 60px;
   }
 }
 
