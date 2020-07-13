@@ -137,6 +137,12 @@
       font-size: 50px;
       margin-top: 40px;
   }
+
+  .resume-btn-div {
+    width:100%;
+    display: flex;
+    justify-content:center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -190,5 +196,11 @@
     margin-right: 0px;
     line-height: normal;
     text-align: center;
+  }
+
+  .resume-btn-div {
+    width:100%;
+    display: flex;
+    justify-content:center;
   }
 }
