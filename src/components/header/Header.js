@@ -18,7 +18,6 @@ class Header extends Component {
 
 	render(){
 	const theme = this.props.theme;
-	console.log(theme);
 	const link = settings.isSplash ? '/splash' : 'home';
   return (
 		<Fade top duration={1000} distance="20px">
@@ -53,18 +52,6 @@ class Header extends Component {
 						</li>
 						<li>
 							<NavLink
-								to="/education"
-								tag={Link}
-								activeStyle={{ fontWeight: "bold" }}
-								style={{ color: theme.text }}
-								onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-								onMouseOut={(event) => onMouseOut(event)}
-							>
-								Education
-							</NavLink>
-						</li>
-						<li>
-							<NavLink
 								to="/experience"
 								tag={Link}
 								activeStyle={{ fontWeight: "bold" }}
@@ -85,30 +72,6 @@ class Header extends Component {
 								onMouseOut={(event) => onMouseOut(event)}
 							>
 								Projects
-							</NavLink>
-						</li>
-						<li>
-							<NavLink
-								to="/opensource"
-								tag={Link}
-								activeStyle={{ fontWeight: "bold" }}
-								style={{ color: theme.text }}
-								onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-								onMouseOut={(event) => onMouseOut(event)}
-							>
-								Open Source
-							</NavLink>
-						</li>
-						<li>
-							<NavLink
-								to="/contact"
-								tag={Link}
-								activeStyle={{ fontWeight: "bold" }}
-								style={{ color: theme.text }}
-								onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-								onMouseOut={(event) => onMouseOut(event)}
-							>
-								Contact Me
 							</NavLink>
 						</li>
 					</ul>

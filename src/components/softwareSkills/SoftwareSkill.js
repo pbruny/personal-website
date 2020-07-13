@@ -26,7 +26,7 @@ class SoftwareSkill extends React.Component {
                     </Tooltip>
                   }
                 >
-                  <li className="software-skill-inline" name={logo.skillName}>
+                  <li key={logo.skillName} className="software-skill-inline" name={logo.skillName}>
                     <span
                       className="iconify"
                       data-icon={logo.fontAwesomeClassname}

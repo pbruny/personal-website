@@ -6,6 +6,7 @@ import { Fade } from "react-reveal";
 import DataScienceImg from './DataScienceImg';
 import FullStackImg from './FullStackImg';
 import CloudInfraImg from "./CloudInfraImg";
+import ProgrammerImg from "./ProgrammerImg";
 import DesignImg from "./DesignImg";
 
 function GetSkillSvg(props){
@@ -15,6 +16,8 @@ function GetSkillSvg(props){
       return <FullStackImg theme={props.theme} />;
   else if(props.fileName==="CloudInfraImg")
       return <CloudInfraImg theme={props.theme} />;
+  else if(props.fileName==="ProgrammerImg")
+      return <ProgrammerImg />;
   return <DesignImg theme={props.theme} />;
 }
 
@@ -25,7 +28,7 @@ class SkillSection extends Component {
       <div>
         {skills.data.map(skill => {
           return (
-            <div className="skills-main-div">
+            <div key={skill.id} className="skills-main-div">
               <Fade left duration={2000}>
                 <div className="skills-image-div">
                   {/* <img
@@ -48,6 +51,7 @@ class SkillSection extends Component {
                     {skill.skills.map(skillSentence => {
                       return (
 												<p
+                          key={skill.softwareSkills.id}
 													className="subTitle skills-text"
 													style={{ color: theme.secondaryText }}
 												>
